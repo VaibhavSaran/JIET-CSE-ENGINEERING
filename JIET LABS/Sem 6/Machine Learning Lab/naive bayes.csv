@@ -1,0 +1,16 @@
+WC,W3,HU,WT,WM
+R,3,H,F,N
+R,3,H,T,N
+O,3,H,F,Y
+S,2,H,F,Y
+S,1,N,F,Y
+S,1,N,T,N
+O,1,N,T,Y
+R,2,H,F,N
+R,1,N,F,Y
+S,2,N,F,Y
+R,2,N,T,Y
+O,2,H,T,Y
+O,3,N,F,Y
+S,2,H,T,N
+R,2,N,T,

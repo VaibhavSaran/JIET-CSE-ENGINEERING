@@ -1,0 +1,6 @@
+sub 1,sub 2,result
+4,3,fail
+6,7,pass
+7,8,pass
+5,5,fail
+8,8,pass

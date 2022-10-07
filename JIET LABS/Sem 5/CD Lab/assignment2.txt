@@ -1,0 +1,1 @@
+Assig 2 q2) WAP Recognize patterns like keyword, special symbol, operators, identifiers and constants. 

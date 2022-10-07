@@ -1,0 +1,29 @@
+#include <graphics.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+
+int main(void)
+{
+      int x,y;
+      int gdriver = DETECT, gmode, errorcode;
+   
+   initgraph(&gdriver, &gmode, "C:\\TC\\BGI");
+   
+   errorcode = graphresult();
+   if (errorcode != grOk)  
+   {
+      printf("Graphics error: %s\n", grapherrormsg(errorcode));
+      printf("Press any key to halt:");
+      getch();
+      exit(1); 
+   }
+      x=getmaxx();
+   y=getmaxy();
+   setbkcolor(CYAN);
+   setcolor(BROWN);
+   line(x   line((5*x)   line((5*x)   line((3*x)   line(x   line(x   line(x   line((3*x)   
+   getch();
+   closegraph();
+   return 0;
+}

@@ -1,0 +1,39 @@
+#include <graphics.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
+#include<iostream.h>
+int main(void)
+{
+   /* request auto detection */
+   int gdriver = DETECT, gmode, errorcode;
+   int midx, midy;
+   int radius = 200;
+
+   /* initialize graphics and local variables */
+   initgraph(&gdriver, &gmode, "C:\\TC\\bgi");
+
+   /* read result of initialization */
+   errorcode = graphresult();
+   if (errorcode != grOk)  /* an error occurred */
+   {
+      cout<<"Graphics error: %s\n"<<grapherrormsg(errorcode);
+      cout<<"Press any key to halt:";
+      getch();
+      exit(1); /* terminate with an error code */
+   }
+   midx = getmaxx() / 2;
+   midy = getmaxy() / 2;
+   setcolor(getmaxcolor());
+   setbkcolor(7);
+   for (int i = 1 ; i<5;i++)
+   {
+	setcolor(i);
+	circle(midx,midy,radius);
+	radius-=20;
+   }
+   /* clean up */
+   getch();
+   closegraph();
+   return 0;
+}
